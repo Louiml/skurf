@@ -1,0 +1,131 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --primary: #9fe870;
+  --on-primary: #0e0f0c;
+  --ink: #0e0f0c;
+  --canvas: #ffffff;
+  --canvas-soft: #e8ebe6;
+}
+
+html,
+body {
+  height: 100%;
+}
+
+body {
+  background: var(--canvas-soft);
+  color: var(--ink);
+  font-feature-settings: "calt";
+  -webkit-font-smoothing: antialiased;
+}
+
+::-webkit-scrollbar {
+  width: 8px;
+  height: 8px;
+}
+::-webkit-scrollbar-thumb {
+  background: #c9cdc5;
+  border-radius: 9999px;
+}
+::-webkit-scrollbar-track {
+  background: transparent;
+}
+
+.display-hero {
+  font-weight: 900;
+  letter-spacing: -0.02em;
+  line-height: 0.95;
+}
+
+.markdown-body {
+  word-break: break-word;
+}
+.markdown-body p {
+  margin: 0 0 0.5rem;
+}
+.markdown-body p:last-child {
+  margin-bottom: 0;
+}
+.markdown-body ul,
+.markdown-body ol {
+  margin: 0.25rem 0 0.5rem;
+  padding-left: 1.25rem;
+}
+.markdown-body pre {
+  background: #0e0f0c;
+  color: #e8ebe6;
+  border-radius: 12px;
+  padding: 12px;
+  overflow-x: auto;
+  font-size: 13px;
+  margin: 0.25rem 0 0.5rem;
+}
+.markdown-body code {
+  font-family: ui-monospace, "SF Mono", Menlo, monospace;
+  font-size: 13px;
+}
+.markdown-body :not(pre) > code {
+  background: rgba(14, 15, 12, 0.08);
+  padding: 1px 5px;
+  border-radius: 6px;
+}
+.markdown-body blockquote {
+  border-left: 3px solid rgba(14, 15, 12, 0.2);
+  margin: 0.25rem 0;
+  padding-left: 0.75rem;
+}
+.markdown-body a {
+  text-decoration: underline;
+  text-underline-offset: 2px;
+}
+.markdown-body table {
+  border-collapse: collapse;
+  margin: 0.25rem 0;
+}
+.markdown-body th,
+.markdown-body td {
+  border: 1px solid rgba(14, 15, 12, 0.15);
+  padding: 4px 8px;
+}
+
+.hljs {
+  background: transparent !important;
+}
+
+.waveform-bar {
+  transition: height 0.1s ease;
+}
+
+@keyframes pulse-ring {
+  0% {
+    box-shadow: 0 0 0 0 rgba(46, 173, 75, 0.5);
+  }
+  70% {
+    box-shadow: 0 0 0 14px rgba(46, 173, 75, 0);
+  }
+  100% {
+    box-shadow: 0 0 0 0 rgba(46, 173, 75, 0);
+  }
+}
+.speaking-ring {
+  animation: pulse-ring 1.4s infinite;
+}
+
+@keyframes typing-bounce {
+  0%,
+  80%,
+  100% {
+    transform: scale(0.6);
+    opacity: 0.4;
+  }
+  40% {
+    transform: scale(1);
+    opacity: 1;
+  }
+}
+.typing-dot {
+  animation: typing-bounce 1.2s infinite;
+}
