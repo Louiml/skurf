@@ -3,12 +3,9 @@
 A high-performance, real-time hybrid P2P / client-server messaging platform combining the core features of WhatsApp, Telegram, and Signal - with genuine end-to-end encryption.
 
 ## Preview
-
-| E2EE chat media (sent via Skurf) | Decrypted on the receiving device |
-|---|---|
-| ![Skurf chat preview](docs/preview-chat-media-1.webp) | ![Skurf shared media preview](docs/preview-chat-media-2.webp) |
-
-> These are the first images shared through Skurf itself - sent in an E2EE chat, relayed as ciphertext, and decrypted in the browser. Replace `docs/preview-*.webp` with proper screenshots if you have them.
+![Landing Page](docs/Screen1.png) ![Chat preview](docs/Screen5.png)
+![Calling](docs/Screen2.png) ![In DM with someone preview](docs/Screen3.png)
+![Saved messages preview](docs/Screen4.png)
 
 ## Stack
 
